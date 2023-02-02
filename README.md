@@ -1,4 +1,4 @@
-# React Beginner Projects [![img](https://skillicons.dev/icons?i=react)](https://skillicons.dev)
+# React Intermediate Projects [![img](https://skillicons.dev/icons?i=react)](https://skillicons.dev)
 
 Intermediate React Projects!!
 
