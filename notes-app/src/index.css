@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html::-webkit-scrollbar{
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: #181D31;
+}
+
+html::-webkit-scrollbar-track{
+  background-color: #181D31;
+}
+
+.dark-mode{
+  background-color: #181D31;
+}
+
+.App{
+  min-height: 100vh;
+}
+
+header{
+  padding:  1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #227C70;
+}
+
+.mode-btn{
+  padding: .5rem;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #227C70;
+  color: #F0E9D2;
+}
+
+.search-bar-container{
+  display: flex;
+  align-items: center;
+  background-color: #FFFBAC;
+  margin: 1rem 1.5rem;
+  padding: .5rem;
+  border-radius: 10px;
+
+}
+
+.search-bar{
+  position: relative;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.2rem;
+  background-color: #FFFBAC;
+  border: 0;
+  flex-grow: 1;
+}
+
+.search-icon{
+  color: #181D31;
+  font-size: 1.3rem;
+}
+
+.note-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 95rem;
+  padding: 1.5rem;
+}
+
+.note{
+  background-color: #FFFBAC;
+  color: #181D31;
+  height: 12rem;
+  border-radius: 10px;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  white-space: pre-wrap;
+}
+
+
+.add-note{
+  background-color: #227C70;
+  color: #F0E9D2;
+}
+
+.add-note-input{
+  outline: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: 0;
+  padding: 1rem;
+  background: none;
+  resize: none;
+  color: #F0E9D2;
+  cursor: default;
+}
+
+.add-note-input::placeholder{
+  color: #F0E9D2;
+}
+
+.note-text{
+  font-size: 1.3rem;
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+
+.note-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon{
+  font-size: 1.8rem;
+  cursor: pointer;
+}
