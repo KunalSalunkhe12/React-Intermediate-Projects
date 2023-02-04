@@ -1,0 +1,71 @@
+.poster-img{
+    height: 35rem;
+}
+
+.poster-img img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.poster-overlay{
+    position: absolute;
+    padding: 2rem 3rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .3s;
+    text-align: left;
+    gap: 1rem;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,.8));
+}
+
+.poster-title{
+    font-size: 3.8vw;
+    font-weight: 800;
+}
+
+.poster-release{
+    display: flex;
+    font-size: 2.5vw;
+    gap: 2rem;
+}
+
+.poster-vote{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.poster-overview{
+    width: 60vw;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .poster-img{
+        height: 25rem;
+    }
+
+    .poster-overlay{
+        padding: 2.5rem 2rem;
+    }
+
+    .poster-overview{
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .poster-img{
+        height: 15rem;
+    }
+
+    .poster-overview{
+        font-size: 1.5vw;
+    }
+}

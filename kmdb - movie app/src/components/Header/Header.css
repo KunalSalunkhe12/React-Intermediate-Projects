@@ -1,0 +1,41 @@
+.navbar-main{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 3rem;
+}
+
+.nav-logo{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: black;
+    background-color: rgb(255, 230, 0);
+    border-radius:10px;
+    padding: 5px;
+}
+
+.nav-items{
+    color: #fff;
+    font-size: 1.3rem;
+    transition: 0.4s;
+}
+
+.nav-items:hover{
+    color: #ff0000;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .navbar-main{
+        padding: 1rem 1rem;
+        gap: .8rem;
+    }
+
+    .nav-logo{
+        width: 3.rem;
+    }
+
+    .nav-items {
+        font-size: 1rem;
+    }
+  }
