@@ -13,7 +13,7 @@ The user's notes will be saved as I have used localStorage to store the notes da
 👉 https://kunalsalunkhe12-noted-react.netlify.app/
 
 
-## React concepts used
+## Used
   - Components
   - Hooks(useState, useEffect)
   - react-icons

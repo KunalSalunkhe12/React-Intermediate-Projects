@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import {AiFillStar} from "react-icons/ai"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import "./Home.css"
+import MovieList from "../../components/MovieList/MovieList";
 
 function Home() {
   const [popularMovies, setPopularMovies] = useState([]);
@@ -59,6 +60,7 @@ function Home() {
             ))
         }
       </Carousel>
+      <MovieList/>
     </main>
   );
 }
