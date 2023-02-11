@@ -1,0 +1,132 @@
+.product-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+.product-card {
+  border: 1px solid grey;
+}
+.card-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.card-content {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.card-header {
+  font-size: 1.5rem;
+}
+.card-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.card-category {
+  color: gray;
+}
+/* Details */
+.detail-container {
+  margin: 2rem auto;
+  width: 75%;
+  height: 20rem;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.detail-image {
+  width: 50rem;
+}
+.detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1rem;
+}
+.detail-title {
+  font-size: 2rem;
+}
+.detail-price {
+  background-color: #eb455f;
+  padding: 3px;
+  border-radius: 10px;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.description {
+  font-size: 1.2rem;
+}
+.add-btn {
+  width: fit-content;
+  padding: 0.5rem;
+  background-color: #59ce8f;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 850px) {
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+  .card-header {
+    font-size: 1.2rem;
+  }
+  .detail-container {
+    flex-direction: column;
+    top: 15%;
+    background-color: transparent;
+  }
+  .detail-image {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  }
+  .card-header {
+    font-size: 1rem;
+  }
+  .card-price {
+    font-size: 1rem;
+  }
+}

@@ -27,6 +27,8 @@ function MovieList() {
 
   }, [type]);
 
+  console.log(movies)
+
   return isLoading ? (
     <div className="loader-container">
       <span className="loader"></span>

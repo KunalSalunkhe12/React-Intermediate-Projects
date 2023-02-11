@@ -1,0 +1,18 @@
+nav{
+    background-color: #181D31;
+    padding: .8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+nav .cart-icon{
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
