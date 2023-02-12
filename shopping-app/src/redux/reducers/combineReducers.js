@@ -1,4 +1,4 @@
-import { fetchProductsReducer, fetchDetailsReducer } from "./productReducer";
+import { fetchProductsReducer, fetchDetailsReducer} from "./productReducer";
 import { combineReducers } from "redux";
 
 const reducers = combineReducers({

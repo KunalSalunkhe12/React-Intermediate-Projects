@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import './Product.css'
 
 
 function ProductCard({ product }) {
+  const location = useLocation();
   return (
-    <Link className="product-card" to={`/product/${product.id}`} style={{textDecoration: 'none', color: 'black'}}>
+    <Link className="product-card" to={location.pathname === '/' ? `/product/${product.id}` : null} style={{textDecoration: 'none', color: 'black'}}>
           <div className="card-image">
             <img src={product.images[0]} alt={product.title} />
           </div>
