@@ -1,0 +1,121 @@
+.heading {
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #59ce8f;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: aliceblue;
+  cursor: pointer;
+  transition: 0.4s;
+  -webkit-box-shadow: 6px 9px 20px -10px rgba(5, 5, 5, 1);
+  -moz-box-shadow: 6px 9px 20px -10px rgba(5, 5, 5, 1);
+  box-shadow: 6px 9px 15px -10px rgba(5, 5, 5, 1);
+}
+button:hover {
+  background-color: #227c70;
+}
+
+/* Cart */
+
+.proceed-btn {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  -webkit-box-shadow: 6px 9px 20px -10px rgba(5, 5, 5, 1);
+  -moz-box-shadow: 6px 9px 20px -10px rgba(5, 5, 5, 1);
+  box-shadow: 6px 9px 15px -10px rgba(5, 5, 5, 1);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.4s;
+}
+.proceed-btn:hover {
+  background-color: #227c70;
+}
+
+/* Summary */
+
+.order-summary {
+  margin-bottom: 3rem;
+}
+
+.order-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-details {
+  display: grid;
+  grid-template-columns: repeat(2, 20rem);
+}
+
+.order-details > div {
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.order-title {
+  font-weight: 500;
+  background-color: gray;
+}
+
+hr {
+  margin: 3rem 10rem 2rem;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn-container {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  align-items: center;
+}
+
+/* Checkout */
+.checkout {
+  display: flex;
+  margin: 2rem;
+  align-items: center;
+  gap: 2rem;
+}
+.checkout-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 750px){
+    .heading{
+        font-size: 1.5rem;
+    }
+    .order-details{
+        grid-template-columns: repeat(2, 10rem);
+    }
+    .order-details > div{
+        font-size: 1rem;
+    }
+    button{
+        font-size: 1.2rem;
+    }
+    hr{
+        margin: 2rem 3rem 1rem;
+    }
+    .checkout{
+        flex-direction: column;
+        gap: 3rem;
+        align-items: flex-start;
+    }
+}
