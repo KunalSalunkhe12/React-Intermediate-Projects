@@ -9,7 +9,7 @@ function ProductCard({ product }) {
   return (
     <Link className="product-card" to={location.pathname === '/' ? `/product/${product.id}` : null} style={{textDecoration: 'none', color: 'black'}}>
           <div className="card-image">
-            <img src={product.images[0]} alt={product.title} />
+            <img src={product.image} alt={product.title} />
           </div>
           <div className="card-content">
             <div className="card-header">{product.title}</div>

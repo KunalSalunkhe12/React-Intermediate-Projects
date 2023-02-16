@@ -2,7 +2,7 @@ import API from "../../api"
 
 export const fetchProducts = () => async (dispatch) =>{
     try {
-        const {data} = await API.get("/products?offset=0&limit=30")
+        const {data} = await API.get("/products")
         dispatch({type: "FETCH_PRODUCTS", payload: data})
 
     } catch (error) {

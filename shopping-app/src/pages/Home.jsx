@@ -11,6 +11,8 @@ function Home() {
     useEffect(() => {
       dispatch(fetchProducts());
     }, [dispatch]);
+
+    console.log(products)
   
   return (
     <ProductList products={products}/>
